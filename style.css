@@ -1,0 +1,1905 @@
+/* 
+Basic Information:
+Project Name    : Nutrition - HTML5 Template for Nutrition and Diet Consultency
+Author          : ThemeeBiT(http://themeebit.com/)
+Date            : 31/08/2017
+Developed By    : Sonia Shurmi
+
+
+Table Of Index
+---------------------------------------------
+Resset Css
+	Default setting
+Style css
+	Home1
+		header_area
+		banner_area
+		need_to_do_area
+		healthy_reciepe_area
+		calculator_area
+		nutritionist_area
+		subscribe_area
+		testimonial_area
+		weightloss_area
+		footer_area
+Home2 CSS
+Other Page
+		About Us
+		Nutrotionist
+		Healthy Reciepe
+		Weightloss Programme
+		Testimonial
+		Contact
+		Error
+Responsive Css
+-------------------------------------------- */
+/*=======================================
+			Start Common CSS
+========================================*/
+body{
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+/*	font-family: 'Quicksand', sans-serif;*/
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a,
+a:hover,
+a:focus{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+/*=======================================
+			End Common CSS
+========================================*/
+
+/*=======================================
+			Start Header CSS
+========================================*/
+.header_area{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+.mainmenu {
+	display: inline-block;
+}
+.mainmenu > ul > li {
+	display: inline-block;
+	position: relative;
+}
+.mainmenu > ul > li > a{
+	font-family: 'Nunito', sans-serif;
+	padding: 0px 18px;
+	color: #333;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 164px;
+	display: inline-block;
+	position: relative;
+}
+.mainmenu > ul > li > a::after {
+	background: #eeeeee;
+	content: "";
+	height: 2px;
+	left: 18px;
+	position: absolute;
+	top: calc(50% + 15px);
+	width: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.head_two .mainmenu > ul > li > a::after{
+	background: #666;
+}
+.mainmenu > ul > li > a::before {
+	background: #fb861e;
+	content: "";
+	height: 2px;
+	left: 18px;
+	position: absolute;
+	top: calc(50% + 15px);
+	width: 0;
+	z-index: 1;
+	-webkit-transition: 0.8s;
+	transition: 0.8s;
+}
+.mainmenu > ul > li:hover > a:after{
+	width: calc(100% - 36px);
+}
+.mainmenu > ul > li:hover > a:before{
+	width: calc(100% - 50px);
+}
+.mainmenu > ul > li.current > a:after{
+	width: calc(100% - 36px);
+}
+.mainmenu > ul > li.current > a:before{
+	width: calc(100% - 50px);
+}
+.search_bar {
+	display: inline-block;
+	position: relative;
+}
+.nav_right {
+	text-align: right;
+}
+.search_bar span{
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+}
+.header_logo > a {
+	display: inline-block;
+	margin-top: 47px;
+}
+.mobile_menu{
+	display: none!important;
+}
+/*=======================================
+			End Header CSS
+========================================*/
+
+/*=======================================
+			Start Dropdown CSS
+========================================*/
+.dropdown {
+	background: #fb861e;
+	position: absolute;
+	text-align: left;
+	width: 232px;
+	padding: 20px 0px;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+	
+}
+.dropdown > li > a {
+	color: #fff;
+	line-height: 0;
+	font-family: 'Nunito', sans-serif;
+	padding: 0px 18px;
+	font-weight: 700;
+	font-size: 18px;
+	display: inline-block;
+}
+.dropdown > li {
+	display: block;
+	margin-bottom: 15px;
+}
+.dropdown > li:last-child {
+	margin-bottom: 0px;
+}
+.mainmenu li:hover .dropdown{
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+form.search_hover {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 300px;
+}
+.search_hover input {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid  #fb861e;
+	line-height: 30px;
+	padding-left: 15px;
+	width: 100%;
+	color: #fb861e;
+}
+.search_hover button {
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	color:  #fb861e;
+	line-height: 32px;
+	position: absolute;
+	right: 5px;
+}
+
+form.search_hover {
+	position: absolute;
+	right: 0;
+	top: -10px;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right top 0;
+	transform-origin: right top 0;
+	width: 300px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.search_bar:hover .search_hover {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.head_two .dropdown > li > a{
+	color: #fff !important;
+}
+/*=======================================
+			End Dropdown CSS
+========================================*/
+
+/*=======================================
+			Start Banner CSS
+========================================*/
+.banner_content > a {
+	display: inline-block;
+}
+.banner_bg {
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	z-index: -1;
+}
+.owl-carousel .owl-item {
+	height: 100%;
+}
+.owl-carousel .owl-item .single_slider,
+.owl-carousel .owl-item .single_slider .container,
+.owl-carousel .owl-item .single_slider .container .row,
+.owl-carousel .owl-item .single_slider .container .row .col-md-8,
+.owl-carousel .owl-item .single_slider .container .row .col-md-10{
+	height: 100%;
+}
+.banner_slider .owl-stage-outer {
+	height: 100%;
+}
+.banner_content {
+	height: 100%;
+	display: table;
+}
+.banner_content_cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.banner_area {
+	border-bottom: 1px solid #ddd;
+	height: 600px;
+}
+.banner_slider {
+	height: 100%;
+}
+.owl-carousel .owl-stage {
+	height: 100%;
+}
+.banner_content_cell h2 {
+	font-size: 46px;
+	font-weight: 700;
+	color: #333;
+	line-height: 61px;
+}
+.banner_content_cell h2 span{
+	color: #88c057;
+}
+.banner_content_cell p {
+	color: #666;
+	font-size: 18px;
+	padding: 30px 0 50px;
+	width: 100%;
+}
+.banner_content_cell a, .banner_content_cell button{
+	background: #fb861e none repeat scroll 0 0;
+	border: 1px solid #fb861e;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	position: relative;
+	z-index: 1;
+}
+.owl-carousel .owl-item img {
+	width: auto;
+}
+.banner_content_cell a img, .banner_content_cell button img {
+	background: #fff none repeat scroll 0 0;
+	display: inline-block;
+	left: 0;
+	padding: 6px;
+	position: absolute;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	vertical-align: top;
+	z-index: -1;
+}
+.banner_content_cell h2 {
+	margin-top: 84px;
+}
+.banner_content_cell a span,  .banner_content_cell button span{
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 52px;
+	margin-left: 52px;
+	padding: 0 10px;
+	position: static;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	background: #fb861e;
+}
+.banner_content_cell > a:hover img,.banner_content_cell > button:hover img{
+	left: calc(100% - 52px);
+}
+.banner_content_cell > a:hover span, .banner_content_cell > button:hover span{
+	margin-left: 0;
+	margin-right: 52px;
+}
+
+
+/*=======================================
+			End Banner CSS
+========================================*/
+
+/*=======================================
+			Start Need To Do CSS
+========================================*/
+.need_to_do_area {
+	padding: 100px 0 90px;
+}
+.sn_need_head h1 {
+	color: #88c057;
+	font-size: 68px;
+	font-weight: 700;
+	font-family: 'Quicksand', sans-serif;
+}
+.sn_need_title > h2 {
+	color: #333;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 62px;
+}
+.sn_need_desc {
+	color: #666666;
+	font-size: 20px;
+	font-weight: 400;
+}
+.single_need {
+	padding: 40px 20px;
+	position: relative;
+}
+.single_need:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fb861e;
+  z-index: -1;
+	opacity: 0;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+}
+.single_need:hover .sn_need_head h1,
+.single_need:hover .sn_need_title > h2,
+.single_need:hover .sn_need_desc{
+	color: #fff;
+	-webkit-transition: 0.8s;
+	transition: 0.8s;
+}
+.single_need:hover:before{
+	opacity: 1;
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+/* body{
+	max-width: 1170px;
+	margin: 0 auto !important;
+	float: none !important;
+} */
+/*=======================================
+			End Need To Do CSS
+========================================*/
+
+/*=======================================
+	Start Healthy Reciepe Area CSS
+========================================*/
+.sn_reciepe_imgnutri {
+	border: 10px solid rgba(136, 192, 87, 0.2);
+	border-radius: 50%;
+	display: inline-block;
+	width: 458px;
+	height: 458px;
+}
+.sn_reciepe_imgnutri img {
+    border-radius: 50%;
+}
+
+.sn_reciepe_img {
+	border: 10px solid rgba(136, 192, 87, 0.2);
+	border-radius: 50%;
+	display: inline-block;
+	width: 236px;
+	height: 236px;
+}
+.sn_reciepe_img img {
+    border-radius: 50%;
+}
+.single_reciepe {
+	text-align: center;
+}
+.sn_reciepe_title > h3,
+.sn_reciepe_title > a > h3{
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 60px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.sn_reciepe_title > h3:hover,
+.sn_reciepe_title > a > h3:hover{
+	color: #88c057;
+}
+.sn_reciepe_ingredient span {
+	color: #2f2f2f;
+	display: block;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.sn_reciepe_ingredient > p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #2f2f2f;
+}
+
+.healthy_reciepe_area .owl-nav {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+.healthy_reciepe_area .owl-prev, 
+.healthy_reciepe_area .owl-next {
+  background: #88c057;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+.healthy_reciepe_area .owl-next {
+  position: absolute;
+  right: 0;
+  margin-right: -50px;
+}
+.healthy_reciepe_area .owl-prev {
+  margin-left: -50px;
+}
+/* section title */
+.section_title > h2 {
+  color: #333;
+  font-family: "Quicksand",sans-serif;
+  font-size: 68px;
+  font-weight: 300;
+  padding-bottom: 70px;
+}
+/*
+.section_title h2::after {
+  background: #fb861e none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 62px;
+  width: 100%;
+}
+*/
+.section_title h2::before {
+	position: absolute;
+	right: 0;
+	top: 62px;
+	content: "";
+	width: calc(50% + 570px);
+	height: 1px;
+	background: #fb861e;
+}
+.healthy_reciepe_area,
+.calculator_area,
+.nutritionist_area{
+	padding-bottom: 82px;
+	position: relative;
+}
+.testimonial_area{
+	padding-bottom: 92px;
+	position: relative;
+}
+
+.bmi_result {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-left: 100px;
+	color: #fb861e;
+	font-weight: 700;
+}
+/* section title */
+/*=======================================
+	End Healthy Reciepe Area CSS
+========================================*/
+
+/*=======================================
+	Start Nutritionist Area CSS
+========================================*/
+.nutrotionist_detail {
+	display: inline-block;
+	margin-top: -20px;
+	padding-left: 30px;
+	vertical-align: top;
+	width: calc(50% + 98px);
+}
+.nutrotionist_img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.nutritionist_name h3 {
+	color: #88c057;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 61px;
+}
+.nutritionist_name > span {
+	font-style: italic;
+	color: #333;
+	font-size: 16px;
+}
+.nutritionist_content > p {
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.nutritionist_social a span {
+	color: #333;
+	margin-right: 14px;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+.nutritionist_social a span:hover {
+	color: #88c057;
+}
+.nutrotionist_slider .owl-nav {
+	bottom: 0;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	left: calc(50% - 76px);
+	position: absolute;
+}
+.nutrotionist_slider .owl-prev,
+.nutrotionist_slider .owl-next {
+	background: #fb861e;
+	color: #fff;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	width: 68px;
+	margin-right: 5px;
+	font-size: 20px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.nutrotionist_slider .owl-prev:hover,
+.nutrotionist_slider .owl-next:hover {
+	background: #88c057;
+	
+}
+/*=======================================
+	End Nutritionist Area CSS
+========================================*/
+
+/*=======================================
+	Start Subscribe Area CSS
+========================================*/
+.subscribe_btn {
+	display: inline-block;
+	float: right;
+}
+.subscribe_title {
+	display: inline-block;
+}
+.subscribe_section {
+	line-height: 261px;
+	
+}
+.contact_no a {
+	color: #88c057;
+	display: block;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Quicksand', sans-serif;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.contact_no a:hover{
+	color: #fb861e;
+}
+.contact_no > a:first-child {
+	margin-bottom: 25px;
+}
+.contact_no a span {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.contact_no::after {
+	background: #f8fff1;
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 10000px;
+	left: -10000px;
+}
+.contact_no {
+	background: #f8fff1 none repeat scroll 0 0;
+	padding: 80px 0;
+	position: relative;
+}
+.subscribe_area {
+	background: #fafafa none repeat scroll 0 0;
+	margin-bottom: 90px;
+}
+.subscribe_title > h2 {
+	color: #333;
+	font-size: 26px;
+	font-weight: 400;
+}
+.btn_one {
+	background: #fb861e;
+	display: inline-block;
+	height: 58px;
+	line-height: 58px;
+	padding: 0 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	text-transform: capitalize;
+}
+.btn_one::after {
+	background: #2f2f2f none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: skewX(-35deg) translateX(-50%);
+	transform: skewX(-35deg) translateX(-50%);
+	width: 0%;
+	z-index: -1;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.banner_area_two .btn_one::after{
+	background: #fb861e;
+}
+.btn_one:hover{
+	color: #fff;
+}
+.btn_one:hover:after{
+	width: 50%;
+}
+.wtloss_link {
+	margin-top: 20px;
+}
+/*=======================================
+	End Subscribe Area CSS
+========================================*/
+
+
+/*=======================================
+	Start Testimonial Area CSS
+========================================*/
+.tesm_content blockquote {
+	border-left: 0 none;
+	color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+}
+.tesm_content span {
+	color: #88c057;
+	font-size: 20px;
+	left: 0;
+	position: absolute;
+	top: 4px;
+}
+.tesm_content {
+	position: relative;
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.tesm_desg {
+	padding-left: 40px;
+}
+.tesm_desg {
+	margin-top: 15px;
+	padding-left: 40px;
+}
+.tesm_desg h3 {
+	font-size: 20px;
+	color: #88c057;
+	font-weight: 600;
+	line-height: 28px;
+}
+.tesm_desg h3 {
+	color: #88c057;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px;
+	margin-bottom: 7px;
+}
+.tesm_desg span {
+	color: #333;
+	font-size: 16px;
+	font-style: italic;
+}
+/*=======================================
+	End Testimonial Area CSS
+========================================*/
+
+/*=======================================
+	Start Weightloss Area CSS
+========================================*/
+.row.single_weightloss:nth-child(even) .col-md-6.img {
+	float: right;
+}
+.blog4 .row.single_weightloss:nth-child(even) .col-md-6.content {
+	float: right;
+}
+.blog2 .row.single_weightloss:nth-child(even) .col-md-6.img {
+	float: left;
+}
+.blog5 .row.single_weightloss:nth-child(even) .col-md-6.img {
+	float: left;
+}
+.row .single_weightloss {
+	margin-bottom: 60px;
+}
+.wtloss_title > h2,
+.wtloss_title > a > h2{
+	color: #88c057;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.wtloss_title > h2:hover,
+.wtloss_title > a > h2:hover{
+	color: #fb861e;
+}
+.wtloss_meta > a {
+	color: #333;
+	font-size: 14px;
+	margin-right: 25px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.wtloss_meta > a:hover{
+	color: #88c057;
+}
+.wtloss_meta > a span {
+	margin-right: 8px;
+}
+.wtloss_meta {
+	margin-bottom: 30px;
+}
+.wtloss_desc > p {
+	color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+}
+.weightloss_area {
+	padding-bottom: 32px;
+}
+.wtloss .weightloss_area {
+	padding-top: 100px;
+}
+/*=======================================
+	End Weightloss Area CSS
+========================================*/
+
+/*=======================================
+	End Footer Top Area CSS
+========================================*/
+.footer_top_area {
+	background: #f8fff1 none repeat scroll 0 0;
+	padding: 100px 0;
+}
+#contactgoogleMap {
+	height: 400px;
+	width: 100%;
+}
+#mapid { 
+	height: 288px;
+	width: 100%;
+}
+.widget_logo {
+	margin-bottom: 55px;
+}
+.widget_contact_list li {
+	color: #88c057;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.widget_contact_list a {
+	color: #88c057;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.widget_contact_list a:hover {
+	color: #fb861e;
+}
+.widget_contact_list a > span {
+	color: #333;
+	display: inline-block;
+}
+.widget_contact_list p {
+	display: inline-block;
+	padding-left: 26px;
+	vertical-align: top;
+	width: calc(100% - 34px);
+}
+.footer_bottom_area > p {
+	line-height: 50px;
+	text-align: center;
+}
+.footer_bottom_area > p {
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+}
+.footer_bottom_area > p a{
+	color: #fb861e;
+}
+/*=======================================
+	End Footer Top Area CSS
+========================================*/
+
+/*=======================================
+	Start Bmi Calculator Area CSS
+========================================*/
+
+
+
+.calculator_area{
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto !important;
+	float: none !important;
+}
+
+/* .calculator_bg{
+	position: absolute;
+	right: 0;
+	top: 152px;
+	width: calc(50% + 83px);
+	height: calc(100% - 232px);
+
+} */
+
+.calculator_bg {
+	display: inline-block;
+	position: absolute;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.6);
+	right: 0;
+	top: 152px;
+	width: calc(50% + 83px);
+	height: calc(100% - 232px);
+	text-align: right;
+	background-image: url(assets/images/bmi-calc.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.calculator_bg img{
+	height: 100%;
+}
+
+.for_height > h2, .for_weight > h2 {
+	background: #88c057 none repeat scroll 0 0;
+	color: #f6f6f6;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 54px;
+	padding-left: 25px;
+	margin-bottom: 40px;
+}
+.form_group > label {
+	font-size: 18px;
+	font-weight: 700;
+	width: 50px;
+}
+.for_height,
+.for_weight{
+	margin-bottom: 30px;
+}
+.form_group input {
+	width: calc(100% - 54px);
+	height: 50px;
+	border: none;
+	background: #f7f7f7;
+	padding-left: 20px;
+	-moz-appearance: none;
+	padding-right: 20px;
+}
+.for_height .form_group{
+	margin-top: 20px;
+}
+.calculator_area .banner_content_cell {
+  float: right;
+}
+/*=======================================
+	End Bmi Calculator Area CSS
+========================================*/
+
+/*=======================================
+	End Home2 Page CSS
+========================================*/
+.header_area.head_two {
+	background: #2f2f2f none repeat scroll 0 0;
+}
+.header_area.head_two .mainmenu li a {
+	color: #88c057;
+}
+.header_area.head_two .search_bar span {
+	color: #88c057;
+}
+.banner_area_two {
+	background: url(assets/images/banner-two-bg.jpg) no-repeat scroll 0 0/cover;
+	position: relative;
+	height: 700px;
+}
+.banner_area_two:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(136, 192, 87, 0.65);
+}
+.banner_area_two .banner_content {
+	text-align: center;
+	width: 100%;
+	padding-top: 164px;
+}
+.banner_area_two .banner_content_cell span {
+	color: #fff;
+	font-size: 39px;
+}
+.banner_area_two .banner_content_cell > h2 {
+	color: #fff;
+	font-size: 33px;
+	line-height: 44px;
+	margin-top: 20px;
+}
+.banner_area_two .banner_content_cell > h2 span{
+	display: block;
+	font-size: 33px;
+}
+.banner_area_two .banner_content_cell a {
+	margin-top: 50px;
+	background: #2f2f2f none repeat scroll 0 0;
+	border: 1px solid #2f2f2f;
+}
+.banner_content{
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  overflow: hidden;
+}
+
+/*=======================================
+	End Home2 Page CSS
+========================================*/
+
+/*=======================================
+	End Testimonial Page CSS
+========================================*/
+.testimonial .testimonial_area::after {
+	display: none;
+}
+.testimonial .testimonial_area{
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+.testimonial .single_tesm {
+	margin-bottom: 60px;
+}
+.breadcrumb_area {
+	background: url(assets/images/img.jpg) no-repeat scroll right 0/cover;
+	height: 397px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	z-index: 1;
+}
+.breadcrumb_area .container, 
+.breadcrumb_area .container .row,
+.breadcrumb_area .container .row .col-md-12,
+.breadcrumb_area .container .row .breadcrumb_content{
+	height: 100%;
+	
+}
+.breadcrumb_cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.breadcrumb_content {
+	display: table;
+}
+.breadcrumb_list li {
+	display: inline-block;
+	padding: 0px 11px;
+	position: relative;
+}
+.breadcrumb_list a {
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.breadcrumb_list a:hover{
+	color: #fb861e;
+}
+.breadcrumb_list li:first-child{
+	padding-left: 0;
+}
+.breadcrumb_list li:last-child:after {
+	display: none;
+}
+.breadcrumb_title h2 {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 61px;
+	color: #333;
+}
+.breadcrumb_list li::after {
+  content: "/";
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+.breadcrumb_list li.current{
+	color: #fb861e;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.breadcrumb_title {
+	margin-top: 82px;
+}
+/*=======================================
+	Start Healthy Reciepe Page CSS
+========================================*/
+.healthy_reciepe .healthy_reciepe_area::after{
+	display: none;
+}
+.healthy_reciepe .single_reciepe {
+	margin-bottom: 60px;
+}
+.healthy_reciepe .healthy_reciepe_area{
+	padding-bottom: 40px;
+	padding-top: 100px;
+}
+/*=======================================
+	Start Nutrotionist Page CSS
+========================================*/
+.nutritionist .single_nutrotionist:nth-child(even) .nutrotionist_img{
+	float: right;
+}
+.nutritionist .single_nutrotionist:nth-child(even) .nutrotionist_detail{
+	padding-left: 0px;
+	padding-right: 30px;
+}
+.nutritionist .nutritionist_area::after{
+	display: none;
+}
+.nutritionist .single_nutrotionist {
+	margin-bottom: 80px;
+}
+.nutritionist .nutritionist_area {
+	padding-bottom: 20px;
+	padding-top: 100px;
+}
+/*=======================================
+	End Nutrotionist Page CSS
+========================================*/
+
+/*=======================================
+	End Error Page CSS
+========================================*/
+.error_title h1 {
+	color: #88c057;
+	font-size: 265px;
+	font-weight: 700;
+}
+.blog5 .wtloss_title h2 {
+	margin-top: 33px;
+}
+.blog6 .wtloss_title h2 {
+	margin-top: 33px;
+}
+.error_content {
+	text-align: center;
+	position: relative;
+	padding: 80px 0px 90px;
+}
+.error_title {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
+	width: auto;
+	height: auto;
+}
+.error_desc > p {
+	color: #fb861e;
+	font-size: 38px;
+	font-weight: 300;
+}
+.error_desc {
+	margin-top: 120px;
+}
+/*=======================================
+	End Error Page CSS
+========================================*/
+
+/*=======================================
+	Start About Us Page CSS
+========================================*/
+.abous_us_area {
+	padding: 100px 0 80px;
+}
+.about .nutritionist_area {
+	padding-bottom: 100px;
+}
+.about_us_img {
+	float: right;
+}
+.about_us_desig {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  background: #88c057;
+  padding: 18px 38px;
+}
+.about_us_content > p {
+	color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+.about_us_desig h3 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 27px;
+}
+.about_us_desig span {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+}
+/*=======================================
+	End About Us Page CSS
+========================================*/
+
+/*=======================================
+	Start Contact Page CSS
+========================================*/
+.form_group input {
+	width: calc(100% - 84px);
+}
+.form_group > label {
+	vertical-align: middle;
+	width: 80px;
+}
+.form_group {
+	margin-bottom: 10px;
+}
+.form_group textarea {
+	background: #f7f7f7 none repeat scroll 0 0;
+	border: medium none;
+	height: 110px;
+	resize: none;
+	width: calc(100% - 84px);
+	vertical-align: top;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+.form_group_btn .btn_one {
+	border: medium none;
+	text-align: center;
+	margin-top: 22px;
+}
+.form_group_btn {
+	text-align: center;
+}
+.contact_area {
+	padding-bottom: 116px;
+}
+/*=======================================
+	End Contact Page CSS
+========================================*/
+
+/*=======================================
+	Start Blog Sidebar CSS
+========================================*/
+.blog_left_sidebar .widget {
+	margin-bottom: 60px;
+}
+.widget.widget_search input {
+	background: rgba(136, 192, 87, 0.2);
+	height: 58px;
+	line-height: 58px;
+	padding-left: 20px;
+	width: calc(100% - 71px);
+	font-weight: 300;
+	color: #333;
+	border: none;
+}
+.widget.widget_search input::-webkit-input-placeholder {
+	color: #333;
+}
+.widget.widget_search input::-moz-placeholder {
+	color: #333;
+}
+.widget.widget_search input:-ms-input-placeholder {
+	color: #333;
+}
+.widget.widget_search input::placeholder {
+	color: #333;
+}
+.widget.widget_search button {
+	background: #fb861e;
+	color: #fff;
+	margin-left: 0;
+	width: 67px;
+	height: 58px;
+	font-size: 14px;
+	font-weight: 400;
+	border: none;
+}
+.blog_page_area {
+	padding: 100px 0 30px;
+}
+.blog_left_sidebar .widget_title > h3{
+	font-size: 20px;
+	font-weight: 600;
+	color:  #fb861e;
+	margin-bottom: 30px;
+}
+.widget_cat_list a {
+	font-size: 16px;
+	color: #333;
+	font-weight: 300;
+}
+.widget_cat_list li {
+	margin-bottom: 7px;
+}
+.widget_p_post_list a {
+	font-size: 18px;
+	color: #333;
+	font-weight: 400;
+}
+.widget_p_post_list span {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+}
+.widget_p_post_list li {
+	margin-bottom: 25px;
+}
+.widget_p_post_list span {
+	color: #666;
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+.widget_tag_list a {
+	background: rgba(136, 192, 87, 0.2);
+	color: #333;
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	height: 46px;
+	line-height: 46px;
+	margin-bottom: 4px;
+	padding: 0 15px;
+}
+.widget_tag_list li {
+	display: inline-block;
+}
+.wtloss_img img {
+	width: 100%;
+}
+.wtloss_img > a {
+	display: inline-block;
+/*	width: 100%;*/
+}
+/*
+.blog5 .wtloss_title > h2, .wtloss_title > a > h2 {
+	margin-top: 30px;
+}
+*/
+.single_blog .nutrotionist_detail {
+	width: calc(50% - 100px);
+	vertical-align: middle;
+}
+.blog_author {
+	padding: 70px 0;
+}
+.comment_title h4 {
+	font-size: 20px;
+	color: #fb861e;
+	margin-bottom: 40px;
+}
+.comment-reply-link {
+	float: right;
+}
+.heading_left {
+	display: inline-block;
+}
+.media {
+  margin-bottom: 34px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #ddd;
+}
+.media_top {
+	margin-bottom: 12px;
+}
+.children .media{
+	padding-left: 90px
+		
+}
+.heading_left > a {
+	font-size: 16px;
+	font-weight: 500;
+	color: #88c057;
+}
+.heading_left > a span {
+	font-size: 14px;
+	font-weight: 300;
+	color: #88c057;
+}
+.comment-reply-link {
+	font-size: 14px;
+	color: #fb861e;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.comment-reply-link:hover{
+	color: #88c057;
+}
+.comment-reply-link span {
+	color: #fb861e;
+	font-size: 14px;
+	margin-right: 6px;
+}
+.comment-content.comment > p {
+	font-size: 14px;
+	color: #666;
+	font-weight: 300;
+	line-height: 25px;
+}
+.media-body {
+	padding-left: 10px;
+}
+.comment-respond {
+	margin-top: 70px;
+}
+.comment-reply-title {
+	margin-bottom: 60px;
+}
+.input-name, .input-email {
+	background: rgba(136, 192, 87, 0.2);
+	height: 55px;
+	line-height: 55px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	width: 100%;
+	font-size: 16px;
+	color: #666;
+	font-weight: 400;
+	border: none;
+}
+textarea.comment_field {
+	background: rgba(136, 192, 87, 0.2);
+	border: medium none;
+	height: 200px;
+	padding-left: 15px;
+	padding-top: 20px;
+	width: 100%;
+	resize: none;
+	margin-bottom: 30px;
+}
+.submit.btn_one {
+	width: auto;
+	margin-bottom: 70px;
+	border: none;
+}
+blockquote {
+	border-left: 1px solid #fb861e;
+	color: #333;
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 50px;
+	padding-left: 32px;
+	margin-top: 30px;
+	font-style: italic;
+}
+button.btn_one {
+	border: medium none;
+}
+.single_blog .wtloss_title > h2 {
+  margin-top: 30px;
+}
+/*=======================================
+	End Blog Sidebar CSS
+========================================*/
+
+/*=======================================
+	Start Responsive CSS
+========================================*/
+/* meanmenu */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	box-sizing: border-box;
+}
+.mobile_mean_logo {
+	display: inline-block;
+}
+.mean-container .mean-nav ul {
+	margin: 33px 0 0;
+}
+/* cetait 33 */
+.mean-container a.meanmenu-reveal span {
+  width: 20px;
+	background: #333;
+}
+.mean-container a.meanmenu-reveal {
+	background: transparent;
+	top: 32px;
+	z-index: 99;
+	padding: 0;
+	right: 10px !important;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+	border-left: 0px solid rgba(255,255,255,.4) !important; 
+	border-bottom: 0px solid rgba(255,255,255,.2) !important; 
+	background: transparent;
+}
+.mean-container .mean-nav ul li a {
+	width: 100%;
+}
+.mean-container .mean-bar {
+	padding: 4px 0 20px;
+	background: transparent;
+}
+.mobile_mean_logo > a {
+	display: inline-block;
+}
+.mean-container .mean-nav {
+	background: transparent;
+	margin-top: 0;
+}
+.mean-container a.meanmenu-reveal {
+  color: #333;
+}
+.mean-container .mean-nav ul li {
+	background: #fb861e;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: #fb861e;
+};
+.mean-container .mean-bar {
+	position: absolute;
+}
+.mean-container .mean-bar {
+	background: transparent none repeat scroll 0 0;
+	left: 50%;
+	margin: 0 auto;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 300px;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+	height: 48px;
+	width: 35px;
+}
+/* meanmenu */
+
+
+/* medium layout */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		width: 910px;
+	}
+	.contact_no a {
+		font-size: 22px;
+	}
+	.nutrotionist_detail {
+		width: calc(50% - 50px);
+	}
+	.nutrotionist_slider .owl-nav {
+		bottom: -60px;
+	}
+	.single_reciepe {
+		padding: 0px 20px;
+	}
+	.banner_content_cell h2 {
+		font-size: 43px;
+	}
+	.mainmenu > ul > li > a {
+		padding: 0 9px;
+	}
+	.error_title {
+		top: 45%;
+	}
+	.error_title h1 {
+		font-size: 229px;
+	}
+	.banner_area_two .banner_content_cell > h2 span {
+		font-size: 30px;
+	}
+	.banner_area_two .banner_content_cell > h2 {
+		font-size: 30px;
+	}
+	.single_blog .nutrotionist_detail {
+		width: 100%;
+		vertical-align: middle;
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+}
+
+/* tab layout */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: 750px;
+	}
+	.mainmenu > ul > li > a {
+		font-family: "Nunito",sans-serif;
+		font-size: 15px;
+		line-height: 125px;
+		padding: 0 6px;
+	}
+	.banner_content_cell h2 {
+		font-size: 36px;
+	}
+	.single_reciepe {
+		padding: 0 20px;
+	}
+	.sn_reciepe_img {
+		height: 180px;
+		width: 180px;
+	}
+	.healthy_reciepe_area .owl-prev {
+		margin-left: -24px;
+	}
+	.healthy_reciepe_area .owl-next {
+		margin-right: -24px;
+	}
+	.healthy_reciepe_area .owl-nav {
+		top: 63px;
+	}
+	.contact_no a {
+		font-size: 17px;
+	}
+	.subscribe_title {
+		width: 56%;
+		vertical-align: middle;
+	}
+	.subscribe_section {
+		line-height: 227px;
+	}
+	.single_nutrotionist {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.single_blog .nutrotionist_detail {
+		width: 100%;
+	}
+	.single_blog .blog_page_content {
+		margin-bottom: 65px;
+	}
+	.nutrotionist_detail {
+		margin-top: 20px;
+		padding-left: 0;
+		width: auto;
+	}
+	.sn_need_title > h2 {
+		font-size: 26px;
+	}
+	.sn_need_desc {
+		font-size: 16px;
+	}
+	.banner_area_two .banner_content_cell > h2 span {
+		font-size: 28px;
+	}
+	.banner_area_two .banner_content_cell > h2 {
+		font-size: 28px;
+	}
+	
+	.breadcrumb_area::after {
+		background: #fff none repeat scroll 0 0;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	.breadcrumb_title {
+		margin-top: 0;
+	}
+	.nutrotionist_img {
+		width: 100%;
+	}
+	.nutrotionist_img > img {
+		width: 100%;
+	}
+	.dropdown {
+		width: 190px;
+		left: -35px;
+	}
+	.dropdown > li > a {
+		font-size: 14px;
+	}
+}
+
+/* mobile layout */
+@media only screen and (max-width: 767px) {
+	.container {
+		width: 300px;
+	}
+
+	.sn_reciepe_imgnutri{
+    max-width: 100%;
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+	.header_area .container{
+		display: none!important;
+	}
+	.banner_content_cell h2 {
+		font-size: 20px;
+		line-height: 35px;
+	}
+	.banner_content_cell p {
+		font-size: 17px;
+		width: 100%;
+	}
+	.banner_bg {
+		display: none;
+	}
+	.section_title > h2 {
+		font-size: 27px;
+	}
+	.footer_bottom_area > p {
+		font-size: 12px;
+	}
+	.widget.widget_contact {
+		margin-bottom: 50px;
+	}
+	.wtloss_title > h2, .wtloss_title > a > h2 {
+		font-size: 22px;
+	}
+	.wtloss_content {
+		margin-top: 35px;
+	}
+	.tesm_content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.tesm_desg {
+		padding-left: 0;
+	}
+	.tesm_content span {
+		display: none;
+	}
+	.contact_no a {
+		font-size: 18px;
+	}
+	.subscribe_section {
+		line-height: 0;
+		padding: 20px 0;
+	}
+	.subscribe_btn {
+		float: left;
+		padding: 27px 0;
+	}
+	.nutrotionist_detail {
+		padding-left: 0;
+		vertical-align: top;
+		width: 100%;
+		padding-bottom: 80px;
+		padding-top: 35px;
+	}
+	.calculator_bg {
+		display: none;
+	}
+	.healthy_reciepe_area .owl-nav {
+		display: none;
+	}
+	.banner_area_two .banner_content_cell > h2 span {
+		font-size: 20px;
+	}
+	.banner_area_two .banner_content_cell > h2 {
+		font-size: 20px;
+		line-height: 33px;
+	}
+	.banner_area_two .banner_content {
+		padding-top: 0;
+	}
+	.breadcrumb_area::after {
+		background: #fff none repeat scroll 0 0;
+		content: "";
+		height: 100%;
+		left: 0;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+	.breadcrumb_title h2 {
+		font-size: 23px;
+	}
+	.breadcrumb_title {
+		margin-top: 0;
+	}
+	.nutritionist .single_nutrotionist {
+		margin-bottom: 0;
+	}
+	.error_title {
+		top: 41%;
+	}
+	.error_desc {
+		margin-top: 87px;
+	}
+	.single_blog .nutrotionist_detail {
+		width: 100%;
+	}
+	blockquote {
+		margin-left: 30px;
+		padding-left: 15px;
+	}
+	.pull-left {
+		float: none !important;
+		margin-bottom: 27px;
+	}
+	.media-body {
+		padding-left: 0;
+	}
+	.nutrotionist_detail {
+		padding-bottom: 0;
+	}
+	.children .media {
+		padding-left: 30px;
+	}
+	.blog_left_sidebar {
+		margin-top: 70px;
+	}
+	.blog_left_sidebar .widget {
+		margin-bottom: 60px;
+	}
+	.wtloss_content {
+		margin-bottom: 50px;
+	}
+	.blog4 .weightloss_area {
+		padding: 100px 0px;
+	}
+	.blog4 .weightloss_area {
+		padding: 50px 0px 60px;
+	}
+	.error_desc > p {
+		font-size: 26px;
+	}
+	.error_title h1 {
+		font-size: 108px;
+	}
+	.nutritionist .nutrotionist_detail {
+		padding-bottom: 50px;
+	}
+}
+
+/* large mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 450px;
+	}
+	.mean-container .mean-bar {
+		width: 450px;
+	}
+	.mean-container .mean-nav ul li a.mean-expand {
+		height: 49px;
+		width: 42px;
+	}
+	.healthy_reciepe_area .owl-next {
+		margin-right: 0;
+		right: 0;
+	}
+	.healthy_reciepe_area .owl-prev {
+		margin-left: 0;
+	}
+	.banner_content_cell h2 {
+		font-size: 31px;
+	}
+	
+	.banner_area_two .banner_content_cell > h2 span {
+		font-size: 24px;
+	}
+	.banner_area_two .banner_content_cell > h2 {
+		font-size: 24px;
+		line-height: 35px;
+	}
+	.error_title h1 {
+		font-size: 200px;
+	}
+	.error_title {
+		top: 44%;
+	}
+}
+
+/* small mobile */
+@media only screen and (min-width: 300px) and (max-width: 479) {
+	.container {
+		width: 300px;
+	}
+}
+/*=======================================
+	End Responsive CSS
+========================================*/
+
+p#ajax_notification {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: blue;
+}
