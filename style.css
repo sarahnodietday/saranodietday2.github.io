@@ -534,13 +534,12 @@ form.search_hover {
 }
 
 .bmi_result {
-	position: absolute;
-	left: 0;
+/* 	position: absolute;
+ */	left: 0;
 	bottom: 0;
 	padding-left: 100px;
 	color: #000000;
 	font-weight: 700;
-	font-size:20px
 }
 /* section title */
 /*=======================================
