@@ -110,7 +110,7 @@ img{
 	background: #666;
 }
 .mainmenu > ul > li > a::before {
-	background: #fb861e;
+	background: #d4d4d4;
 	content: "";
 	height: 2px;
 	left: 18px;
@@ -160,7 +160,7 @@ img{
 			Start Dropdown CSS
 ========================================*/
 .dropdown {
-	background: #fb861e;
+	background: #d4d4d4;
 	position: absolute;
 	text-align: left;
 	width: 232px;
@@ -201,16 +201,16 @@ form.search_hover {
 }
 .search_hover input {
 	background: #fff none repeat scroll 0 0;
-	border: 1px solid  #fb861e;
+	border: 1px solid  #d4d4d4;
 	line-height: 30px;
 	padding-left: 15px;
 	width: 100%;
-	color: #fb861e;
+	color: #d4d4d4;
 }
 .search_hover button {
 	background: transparent none repeat scroll 0 0;
 	border: medium none;
-	color:  #fb861e;
+	color:  #d4d4d4;
 	line-height: 32px;
 	position: absolute;
 	right: 5px;
@@ -300,8 +300,8 @@ form.search_hover {
 	width: 100%;
 }
 .banner_content_cell a, .banner_content_cell button{
-	background: #fb861e none repeat scroll 0 0;
-	border: 1px solid #fb861e;
+	background: #d4d4d4 none repeat scroll 0 0;
+	border: 1px solid #d4d4d4;
 	display: inline-block;
 	overflow: hidden;
 	-webkit-transition: 0.5s;
@@ -336,7 +336,7 @@ form.search_hover {
 	position: static;
 	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
-	background: #fb861e;
+	background: #d4d4d4;
 }
 .banner_content_cell > a:hover img,.banner_content_cell > button:hover img{
 	left: calc(100% - 52px);
@@ -385,7 +385,7 @@ form.search_hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fb861e;
+  background: #d4d4d4;
   z-index: -1;
 	opacity: 0;
 	-webkit-transition: 0.5s;
@@ -504,7 +504,7 @@ form.search_hover {
 }
 /*
 .section_title h2::after {
-  background: #fb861e none repeat scroll 0 0;
+  background: #d4d4d4 none repeat scroll 0 0;
   content: "";
   height: 1px;
   left: 0;
@@ -520,7 +520,7 @@ form.search_hover {
 	content: "";
 	width: calc(50% + 570px);
 	height: 1px;
-	background: #fb861e;
+	background: #d4d4d4;
 }
 .healthy_reciepe_area,
 .calculator_area,
@@ -538,8 +538,9 @@ form.search_hover {
 	left: 0;
 	bottom: 0;
 	padding-left: 100px;
-	color: #fb861e;
+	color: #000000;
 	font-weight: 700;
+	font-size:20px
 }
 /* section title */
 /*=======================================
@@ -596,7 +597,7 @@ form.search_hover {
 }
 .nutrotionist_slider .owl-prev,
 .nutrotionist_slider .owl-next {
-	background: #fb861e;
+	background: #d4d4d4;
 	color: #fff;
 	height: 44px;
 	line-height: 44px;
@@ -640,7 +641,7 @@ form.search_hover {
 	transition: 0.3s;
 }
 .contact_no a:hover{
-	color: #fb861e;
+	color: #d4d4d4;
 }
 .contact_no > a:first-child {
 	margin-bottom: 25px;
@@ -674,7 +675,7 @@ form.search_hover {
 	font-weight: 400;
 }
 .btn_one {
-	background: #fb861e;
+	background: #d4d4d4;
 	display: inline-block;
 	height: 58px;
 	line-height: 58px;
@@ -700,7 +701,7 @@ form.search_hover {
 	transition: 0.3s;
 }
 .banner_area_two .btn_one::after{
-	background: #fb861e;
+	background: #d4d4d4;
 }
 .btn_one:hover{
 	color: #fff;
@@ -798,7 +799,7 @@ form.search_hover {
 }
 .wtloss_title > h2:hover,
 .wtloss_title > a > h2:hover{
-	color: #fb861e;
+	color: #d4d4d4;
 }
 .wtloss_meta > a {
 	color: #333;
@@ -862,7 +863,7 @@ form.search_hover {
 	transition: 0.3s;
 }
 .widget_contact_list a:hover {
-	color: #fb861e;
+	color: #d4d4d4;
 }
 .widget_contact_list a > span {
 	color: #333;
@@ -885,7 +886,7 @@ form.search_hover {
 	color: #333;
 }
 .footer_bottom_area > p a{
-	color: #fb861e;
+	color: #d4d4d4;
 }
 /*=======================================
 	End Footer Top Area CSS
@@ -931,8 +932,8 @@ form.search_hover {
 }
 
 .for_height > h2, .for_weight > h2 {
-	background: #88c057 none repeat scroll 0 0;
-	color: #f6f6f6;
+	background: #d4d4d4 none repeat scroll 0 0;
+	color: #000000;
 	font-size: 25px;
 	font-weight: 400;
 	line-height: 54px;
@@ -1075,7 +1076,7 @@ form.search_hover {
 	transition: 0.3s;
 }
 .breadcrumb_list a:hover{
-	color: #fb861e;
+	color: #d4d4d4;
 }
 .breadcrumb_list li:first-child{
 	padding-left: 0;
@@ -1096,7 +1097,7 @@ form.search_hover {
   top: 0;
 }
 .breadcrumb_list li.current{
-	color: #fb861e;
+	color: #d4d4d4;
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -1171,7 +1172,7 @@ form.search_hover {
 	height: auto;
 }
 .error_desc > p {
-	color: #fb861e;
+	color: #d4d4d4;
 	font-size: 38px;
 	font-weight: 300;
 }
@@ -1290,7 +1291,7 @@ form.search_hover {
 	color: #333;
 }
 .widget.widget_search button {
-	background: #fb861e;
+	background: #d4d4d4;
 	color: #fff;
 	margin-left: 0;
 	width: 67px;
@@ -1305,7 +1306,7 @@ form.search_hover {
 .blog_left_sidebar .widget_title > h3{
 	font-size: 20px;
 	font-weight: 600;
-	color:  #fb861e;
+	color:  #d4d4d4;
 	margin-bottom: 30px;
 }
 .widget_cat_list a {
@@ -1372,7 +1373,7 @@ form.search_hover {
 }
 .comment_title h4 {
 	font-size: 20px;
-	color: #fb861e;
+	color: #d4d4d4;
 	margin-bottom: 40px;
 }
 .comment-reply-link {
@@ -1405,7 +1406,7 @@ form.search_hover {
 }
 .comment-reply-link {
 	font-size: 14px;
-	color: #fb861e;
+	color: #d4d4d4;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -1413,7 +1414,7 @@ form.search_hover {
 	color: #88c057;
 }
 .comment-reply-link span {
-	color: #fb861e;
+	color: #d4d4d4;
 	font-size: 14px;
 	margin-right: 6px;
 }
@@ -1460,7 +1461,7 @@ textarea.comment_field {
 	border: none;
 }
 blockquote {
-	border-left: 1px solid #fb861e;
+	border-left: 1px solid #d4d4d4;
 	color: #333;
 	font-size: 18px;
 	font-weight: 400;
@@ -1527,10 +1528,10 @@ button.btn_one {
   color: #333;
 }
 .mean-container .mean-nav ul li {
-	background: #fb861e;
+	background: #d4d4d4;
 }
 .mean-container .mean-nav ul li a.mean-expand:hover {
-	background: #fb861e;
+	background: #d4d4d4;
 };
 .mean-container .mean-bar {
 	position: absolute;
