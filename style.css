@@ -534,8 +534,8 @@ form.search_hover {
 }
 
 .bmi_result {
-/* 	position: absolute;
- */	left: 0;
+	position: static;
+	left: 0;
 	bottom: 0;
 	padding-left: 100px;
 	color: #000000;
